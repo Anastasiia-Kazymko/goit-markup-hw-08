@@ -21,14 +21,13 @@ header {
 .site-nav {
   display: flex;
   align-items: center;
-  //margin-left: 93px;
 }
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-nav__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
@@ -80,6 +79,7 @@ header {
   margin-left: 84px;
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
     margin-left: auto;
   }
 }
@@ -116,7 +116,6 @@ header {
 
 .logo {
   @media screen and (max-width: 1199px) {
-    margin-right: 88px;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -127,6 +126,9 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
